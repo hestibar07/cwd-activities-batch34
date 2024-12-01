@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ab3520be06.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="purple">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://discord.com/" class="brand-logo" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">   
+                            <a href="https://discord.com/download">Download</a></li>
+                        <li>   
+                            <a href="https://discord.com/nitro">Nitro</a></li>
+                        <li>   
+                            <a href="https://discord.com/servers">Discover</a></li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown1">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <!--Sidenav-->
+                <ul id="slide-out" class="sidenav">
+                    <li><div class="user-view">
+                        <div class="background">
+                        <img src="images/">
+                    </div>
+                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        </div>
+                    </li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                        <li><a href="#!">Second Link</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="subheader">Subheader</a></li>
+                        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li>
+                        <a href="#!">One</a>
+                    </li>
+                    <li>
+                        <a href="#!">Two</a>
+                    </li>
+                    <li>
+                        <a href="divider"></a>
+                    </li>
+                    <li>
+                        <a href="#!">Three</a>
+                    </li>
+                </ul>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a href="#test1">Test 1</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test2">Test 2</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#test3">Test 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1 class="center green-text text-light-green darken-3">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        <h3 class="green-text text-light-green darken-3">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+
+        <nav class="blue">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://discord.com/" class="brand-logo left" target="_blank">
+                    <i class="fa-brands fa-discord"></i> <span class="white-text"><b>Discord</b></span>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-small-only">
+                    <li>   
+                        <a href="https://discord.com/download">Download</a></li>
+                    <li>   
+                        <a href="https://discord.com/nitro">Nitro</a></li>
+                    <li>   
+                        <a href="https://discord.com/servers">Discover</a></li>
+                    <li>   
+                        <a href="https://discord.com/ads/quests">Quests</a></li>
+                    <li>   
+                        <a href="https://discord.com/safety">Safety</a></li>
+                    <li>   
+                        <a href="https://support.discord.com/hc/en-us">Support</a></li>
+                    
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <br>
+        <h3 class="green-text text-light-green darken-3">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+        <nav class="purple">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://discord.com/" class="brand-logo right" target="_blank">
+                    <i class="fa-brands fa-twitch left"></i><span class="white-text"><b>Twitch</b></span>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-small-only">
+                    <li>   
+                        <a href="https://www.twitch.tv/directory">Browse</a></li>
+                    <li>   
+                        <a href="https://www.twitch.tv/p/en/about/">About</a></li>
+                    <li>   
+                        <a href="https://www.twitch.tv/p/en/stream/">Stream</a></li>
+                    <li>   
+                        <a href="https://www.twitch.tv/p/en/watch/">Watch</a></li>
+                    <li>   
+                        <a href="https://www.twitch.tv/p/en/company/">Company</a></li>
+                    <li>   
+                        <a href="https://blog.twitch.tv/en">Blog</a></li>
+                    
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <br>
+        <h3 class="green-text text-light-green darken-3">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"''>. You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav class="white">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://discord.com/" class="brand-logo center" target="_blank">
+                    <i class="fa-brands fa-youtube red-text"></i><span class="black-text"><b>YouTube</b></span>
+                </a>
+                <ul id="nav-mobile" class="center hide-on-small-only">
+                    <li>   
+                        <a href="https://www.youtube.com/" class="black-text">Home</a></li>
+                    <li>   
+                        <a href="https://www.youtube.com/shorts/09d9kSv7Aa8" class="black-text" >Short</a></li>
+                    <li>   
+                        <a href="https://www.youtube.com/feed/subscriptions"class="black-text">Subcriction</a></li>
+                    <li>   
+                        <a href="https://www.youtube.com/@haroldsteveestibar2161" class="black-text">Your channel</a></li>
+                    <li>   
+                        <a href="https://www.youtube.com/feed/history" class="black-text">History</a></li>
+                    <li>   
+                        <a href="https://www.youtube.com/feed/playlists"class="black-text">Playlists</a></li>
+                    
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <h3 class="green-text text-light-green darken-3">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav class="black">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://discord.com/" class="brand-logo center" target="_blank">
+                    <i class="fa-brands fa-spotify green-text"></i></i><span class="white-text"><b>Spotify</b></span>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-small-only">
+                    <li class="active">   
+                        <a href="https://open.spotify.com/">Home</a></li>
+                    <li>   
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF">Top Songs</a></li>
+                    <li>   
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF">Top 50</a></li>
+                    <li>   
+                        <a href="https://open.spotify.com/section/0JQ5DAuChZYPe9iDhh2mJz">Playlists</a></li>
+                    <li>   
+                        <a href="https://discord.com/safety">Safety</a></li>
+                    <li>   
+                        <a href="https://support.discord.com/hc/en-us">Support</a></li>
+                    
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <h3 class="green-text text-light-green darken-3">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="yellow nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://discord.com/" class="brand-logo" target="_blank">
+                    <i class="fa-brands fa-snapchat black-text"></i><b>Snapchat</b></span>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-small-only">
+                        <li class="active">   
+                        <a href="https://www.snapchat.com/discover?web_client_id=a6de3f69-0774-42a8-892a-067cabbc0b03">Stories</a></li>
+                        <li>   
+                        <a href="https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYaGJrdHZteXRlAZGzvOibAZGzvNxsAAAAAw?web_client_id=a6de3f69-0774-42a8-892a-067cabbc0b03">Spotlight</a></li>
+                        <li>   
+                        <a href="https://web.snapchat.com/?ref=web_nav_chat_icon&web_client_id=a6de3f69-0774-42a8-892a-067cabbc0b03">Chats</a></li>
+                        <li>   
+                        <a href="https://www.snapchat.com/lens">Lenses</a></li>
+                        <li>   
+                        <a href="https://my.snapchat.com/">Post</a></li>
+                        <li>   
+                        <a href="https://www.snapchat.com/download?sp=story_studio_lite">Download</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                            <li class="tab">
+                                <a class="black-text" href="#test1">Test 1</a>
+                            </li>
+                            <li class="tab">
+                                <a class="black-text"
+                                href="#test2">Test 2</a>
+                            </li>
+                            <li class="tab">
+                                <a class="black-text"
+                                href="#test3">Test 3</a>
+                            </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tabs structure -->
+        <div class="row">
+            <div class="col s12" id="test1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="steve.JPG" alt=""
+                        class="responsive-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="test2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/1.jpg" alt=""
+                        class="responsive-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="test3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/2.jpg" alt=""
+                        class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div style="height: 1000px;"></div>
+
+
+    <!--Jquery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Tabs Init
+                $('.tabs').tabs();
+            // Sidenav Init
+                $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+
+            // Dropdown Init
+                $('.dropdown-trigger').dropdown();
+                
+        });
+    </script>
+
+</body>
+</html>
